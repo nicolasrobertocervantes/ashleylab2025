@@ -1,0 +1,181 @@
+/**
+Theme Name: Ashley Lab
+Author: Wired Moon
+Author URI: http://wiredmoon.com
+Description: Custom Theme for Ashley Lab
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: ashley-lab
+Template: astra
+*/ 
+a:hover {   
+    text-decoration: underline;
+}
+.home .site-footer {
+	margin-top: 0;
+}
+.news {
+	display: flex;
+	gap: 1.5rem;
+	align-items: center;
+}
+
+.news-thumbnail img {
+	height: auto;
+}
+
+.news p {
+	margin-bottom: .75rem !important;
+}
+
+.player .vp-video-wrapper .vp-preview {
+  z-index: 1;
+}
+
+.accordion-item {
+  overflow: hidden;
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  z-index: 9999;
+}
+
+.accordion-item input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.accordion-item-title {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.accordion-item-content {
+  max-height: 0;
+  height: auto;
+  opacity: 0;
+  transition: all 0.35s;
+  position: relative;
+  z-index: 1;
+}
+
+.accordion-item input:checked ~ .accordion-item-content {
+  max-height: 1000vh;
+  opacity: 1;
+  margin-top: 1.5rem;
+}
+
+/* Accordion styles */
+
+.acf-block-preview .accordion {
+    border-left: 2px solid #ccc;
+    border-bottom-left-radius: 20px;
+    padding: 30px 0 30px 30px !important;
+}
+
+.acf-block-preview .accordion::before {
+    content: "accordion";
+    font-size: 0.8em;
+    font-weight: bold;
+    top: -20px;
+    position: absolute;
+    left: 0px;
+    color: #ccc;
+}
+
+.accordion-item {
+  overflow: hidden;
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+}
+
+.accordion-item input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.accordion-item-title {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.accordion-item-title h3 {
+  margin: 0 !important;
+  }
+
+.tax-team .accordion-item-content {
+  /*max-height: 0;
+  opacity: 0;
+  transition: all 0.35s;
+  display: flex;
+  gap: 1.5rem;*/
+}
+
+/*.page-id-1172 .accordion-item-content * {*/
+/*  flex-grow: 1;*/
+/*}*/
+
+.accordion-item-image {
+  margin-right: 1.5rem;
+  width: 50px;
+  height: 50px;
+}
+
+.tax-team .accordion-item-content img {
+  height: 200px;
+  width: auto;
+  margin-bottom: 1rem;
+}
+
+/*.accordion-item input:checked + .accordion-item-title::before {
+  content: "-";
+  transform: rotate(180deg);
+}*/
+
+.tax-team .accordion-item input:checked ~ .accordion-item-content {
+  max-height: 100vh;
+  opacity: 1;
+  margin-top: 1.5rem;
+}
+
+.tax-team .accordion-item input:checked ~ .accordion-item-title .accordion-item-image {
+  display: none;
+}
+
+.accordion-item-content.collapsed {
+  height: 0;
+  overflow: hidden;
+}
+
+.archive #primary {
+  margin-top: 0 !important;
+}
+.site-primary-footer-wrap[data-section="section-primary-footer-builder"] .ast-builder-grid-row {
+    max-width: 1010px;    
+}
+.site-below-footer-wrap[data-section="section-below-footer-builder"] .ast-builder-grid-row {
+    max-width: 1030px;    
+}
+@media (min-width: 922px) {
+	.ast-container {
+    max-width: 1050px !important;
+	}
+}
+@media (min-width: 768px) {
+  .tax-team .accordion-item-content {
+    max-height: 0;
+    opacity: 0;
+    transition: all 0.35s;
+    display: flex;
+    gap: 1.5rem;
+  }
+  .tax-team .accordion-item-content img {
+    margin-bottom: 0;
+  }
+}
